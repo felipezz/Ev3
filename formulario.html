@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Formulario evaluación 2</title>
+</head>
+<body>
+    <div class="container mt-5 mb-5">    
+        <div class="row justify-content-center ">
+            <div class="col-md-5">
+                <form id="formu" class="row formulario" action="exito.html" method="post" onsubmit="return validar()">
+                    <div class="text-center">
+                        <h3>Registro de Usuario</h3>
+                    </div>
+                    <div class="mt-3">
+                        <!-- <label class="form-label">Nombre de usuario</label> -->
+                        <input id="mail" class="form-control" type="text" placeholder="Usuario: algo@mail.cl">
+                        <div id="msj_mail"></div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <!-- <label class="form-label">Contraseña</label> -->
+                        <input id="password1" class="form-control" type="password" placeholder="Ingrese contraseña ">
+                        <div id="msj_password1"></div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <!--<label class="form-label">Repita contraseña</label> -->
+                        <input id="password2" class="form-control" type="password" placeholder="Repita la contraseña">
+                        <div id="msj_password2"></div>
+                    </div>
+                    <div class="mt-3">
+                        <!-- <label class="form-label">Dirección</label> -->
+                        <input id="address" class="form-control" type="text" placeholder="Dirección: Las Animas # 666">
+                        <div id="msj_address"></div>
+                    </div>
+                    <div class="col-md-7 mt-3">
+                        <!-- <label class="form-label">Número de telefono</label> -->
+                        <input id="phone" class="form-control" type="text" placeholder="Ingrese su número de telefono">
+                        <div id="msj_phone"></div>
+                    </div>
+                    <div class="col-md-5 mt-3">
+                        <!-- <label class="form-label">Comuna</label> -->
+                        <select id="comuna" class="form-select" aria-label="Default select example">
+                            <option selected>Comuna: Elija una ...</option>
+                            <option value="1">Valdivia</option>
+                            <option value="2">La Unión</option>
+                            <option value="3">Panguipulli</option>
+                            <option value="4">Río Bueno</option>
+                            <option value="5">Los Lagos</option> 
+                            <option value="6">Paillaco</option>
+                            <option value="7">San José de la Mariquina</option>
+                            <option value="8">Lanco</option>
+                            <option value="9">Futrono</option>
+                            <option value="10">Lago Ranco</option>
+                            <option value="11">Máfil</option>
+                            <option value="12">Corral</option>
+                          </select>
+                          <div id="msj_comuna"></div>
+                    </div>
+                    <div class="mt-3">
+                        <!-- <label class="form-label">Página Web personal</label> -->
+                        <input id="web" class="form-control" type="text" placeholder="Página web personal">
+                        <div id="msj_web"></div>
+                    </div>
+                    <div class="mt-3">
+                        <label class="form-label">Ingrese al menos 2 aficiones</label>
+                        <input id="hobbies" class="form-control" type="text">
+                        <div id="msj_hobbies"></div>
+                    </div>
+                   
+                    <div class="mt-3">
+                        <label class="form-label"></label>
+                        <button type="button" onclick="agregar()" class="btnl">Ingresar</button>
+                    </div>
+                    <div class="mt-3">
+                        <ul id="lista" class="list-group">
+                            <li class="list-group-item">...</li>
+                        </ul>
+                    </div>
+                    <div class="boton mt-3 mb-1">
+                        <button type="submit" class="btn">Registrarse</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/validacion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
